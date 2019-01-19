@@ -4,11 +4,11 @@
  # Readme.md #
 
 ## CampSite 2017 theme and a style guide 
-[WordCamp Europe 2017](https://2017.europe.wordcamp.org/) design team ported the [Underscores](https://underscores.me/) theme and made it available for [all WordCamps](https://make.wordpress.org/community/2017/05/08/the-new-wordcamp-base-theme-campsite-2017/) as a base theme. The theme was improved with additional [widget areas](https://lucijanblagonic.github.io/wceu-2018/styleguide/section-6.html#kssref-6-widget-areas) and a “Day of” template —based on the feedback received from the WordPress community.
+[WordCamp Iloilo 2019](https://2017.europe.wordcamp.org/) design team ported the [Underscores](https://underscores.me/) theme and made it available for [all WordCamps](https://make.wordpress.org/community/2017/05/08/the-new-wordcamp-base-theme-campsite-2017/) as a base theme. The theme was improved with additional [widget areas](https://lucijanblagonic.github.io/wceu-2018/styleguide/section-6.html#kssref-6-widget-areas) and a “Day of” template —based on the feedback received from the WordPress community.
 
 ## Why use the style guide 
 
-Some WordCamps choose to build their design from scratch, by using a base theme or by styling available default themes. Others duplicate one of the existing designs and modifiy it. The WordCamp Europe 2017 design team created a [modular WordCamp design](https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/) approach with the help of the style guide.
+Some WordCamps choose to build their design from scratch, by using a base theme or by styling available default themes. Others duplicate one of the existing designs and modifiy it. The WordCamp Iloilo 2019 design team created a [modular WordCamp design](https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/) approach with the help of the style guide.
 
 After you setup the style guide on your machine, the style guide is generated directly from CSS and HTML examples. This speeds up  development of your design, since you are working on static examples and don’t need to emulate CampSite 2017 and WordCamp website codebase and plugins (some of which are specially created for WordCamps).
 
