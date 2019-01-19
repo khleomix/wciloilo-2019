@@ -18,6 +18,7 @@
   background-size: cover;
   background-image: $site-hero-path-small;
   min-height: 90vh;
+  z-index: 2;
 
   animation-name: daylight;
   animation-delay: 1s;
