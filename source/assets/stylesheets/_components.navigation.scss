@@ -111,6 +111,7 @@
 .main-navigation {
 
   position: relative;
+  z-index: 1000;
 
   &:before {
 
@@ -171,7 +172,8 @@
 
 }
 
-.menu-item {
+.menu-item,
+.page_item {
 
   position: relative;
 
@@ -196,7 +198,8 @@
 
 }
 
-.menu-item a {
+.menu-item a,
+.page_item a {
 
   display: block;
   color: $color-link;
@@ -229,7 +232,8 @@
 
 }
 
-.current-menu-item > a {
+.current-menu-item > a,
+.current_page_item > a {
 
   color: $color-text-strong;
   background-color: $color-link;
@@ -240,7 +244,8 @@
  * Sub menu
  */
 
-.menu-item-has-children {
+.menu-item-has-children,
+.page-item-has-children {
 
   background-color: rgba($color-brand-tertiary, .6);
 
@@ -318,7 +323,8 @@
 
   @include list-reset();
 
-  .menu-item {
+  .menu-item,
+  .page-item {
 
     text-transform: none;
     font-weight: $regular;
@@ -360,7 +366,8 @@
 
     background-color: $color-link;
 
-    .menu-item {
+    .menu-item,
+    .page-item {
 
       width: 100%;
       margin: 0;
