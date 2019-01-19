@@ -1,2 +1,50 @@
 /* =Experimental
+ * Custom animation
 ===================================================== */
+
+@keyframes time {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+@keyframes daylight {
+	0% {  background-color: #073465; }
+	15% {  background-color: #08305d; }
+	40% { background-color: #111628; }
+	70% { background-color: #111628; }
+	80% {  background-color: #a1ecff; }
+	100% {  background-color: #7ed7ff;}
+}
+@keyframes words {
+    0%, 100% { transform: translateY(840px); }
+    50% { transform: translateY(0px); }
+}
+@keyframes rotate {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+@keyframes fader {
+	0% { opacity: 0; }
+	15% { opacity: 0; }
+	40% { opacity: 1; }
+	60% { opacity: 0.4; }
+	70% { opacity: 1; }
+	80% {  opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blinker {
+	0% { opacity: 0; }
+	18% { opacity: 0; }
+	25% { opacity: 1; }
+	40% { opacity: 0; }
+	60% { opacity: 1; }
+	70% {  opacity: 0; }
+	100% { opacity: 0; }	
+}
+@keyframes blinker-1 {
+	0% { opacity: 0; }
+	30% { opacity: 0; }
+	40% { opacity: 1; }
+	60% { opacity: 1; }
+	80% {  opacity: 0; }
+	100% { opacity: 0; }	
+}

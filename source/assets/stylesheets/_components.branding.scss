@@ -18,9 +18,18 @@
  */
 
 .site-header {
-
-  background-color: transparent;
-
+	width: 100vw;
+	height: 100vh;
+	border: none;
+	margin: 0 auto;
+	position: relative;
+	animation-delay: 1s;
+  background: #81d8ff;
+	animation-name: daylight;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+	animation-timing-function: linear;
 }
 
 .site-header .site-branding {
