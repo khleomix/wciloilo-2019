@@ -14,15 +14,20 @@
   position: relative;
 
   background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: fixed;
+  background-position: 0 0;
+  background-size: cover;
   background-image: $site-hero-path-small;
+
+  animation-name: daylight;
+  animation-delay: 1s;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+  animation-timing-function: linear;
 
   @include breakpoint(medium) {
 
     background-image: $site-hero-path-large;
-    background-position: 50% 50%;
-    background-size: cover;
 
   }
 
