@@ -26,23 +26,12 @@
 
   position: absolute;
   top: 0;
-  
+
   .widget {
     max-width: 100vw;
     padding: 0;
   }
 
-  .widget_text {
-
-    background-color: transparent;
-  
-    &:before {
-  
-      background-color: transparent!important;
-  
-    }
-  
-  }
 }
 
 /*
@@ -82,6 +71,35 @@
 
 }
 
+/*
+ * Footer Widgets
+ *
+ */
+
+#footer-widgets {
+  background: url('https://2019.iloilo.wordcamp.org/files/2019/01/footer-bg.png') no-repeat 0 0;
+  background-size: cover;
+
+  &:after {
+
+    position: absolute;
+    // z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    right: -1000px;
+
+    background:url('https://2019.iloilo.wordcamp.org/files/2019/01/siopuu.png')no-repeat top right;
+
+    content: "";
+  }
+
+  .widget {
+    max-width: 100vw;
+    padding: 0;
+  }
+
+}
 
 /*
  * Widget text
@@ -91,12 +109,5 @@
 
 .widget_text {
 
-  background-color: $color-grey-10;
-
-  &:before {
-
-    background-color: $color-grey-10!important;
-
-  }
 
 }
