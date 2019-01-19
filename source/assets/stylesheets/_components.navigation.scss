@@ -111,6 +111,7 @@
 .main-navigation {
 
   position: relative;
+  margin-top: 90vh;
   z-index: 1000;
 
   &:before {
@@ -157,8 +158,6 @@
   }
 
   @include breakpoint(to-small) {
-
-    border-top: 1px solid rgba(255,255,255,.2);
 
     display: none;
 
