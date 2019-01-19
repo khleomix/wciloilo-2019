@@ -32,11 +32,13 @@
   &:before {
 
     position: absolute;
+    right: 5%;
     top: 0;
     background:url('https://2019.iloilo.wordcamp.org/files/2019/01/siopuu.png')no-repeat;
+    background-size: contain;
 
-    height: 515px;
-    width: 550px;
+    height: 661px;
+    width: 700px;
 
     content: "";
   }
