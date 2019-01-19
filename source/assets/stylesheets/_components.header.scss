@@ -13,12 +13,7 @@
 
   position: relative;
 
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
-  background-image: $site-hero-path-small;
   min-height: 90vh;
-  z-index: 2;
 
   animation-name: daylight;
   animation-delay: 1s;
@@ -26,28 +21,6 @@
 	animation-iteration-count: infinite;
 	overflow: hidden;
   animation-timing-function: linear;
-
-  @include breakpoint(medium) {
-
-    background-image: $site-hero-path-large;
-
-  }
-
-  @include transition-fast();
-
-  &:before {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    background-color: rgba($site-hero-background, $site-hero-overlay);
-
-    content: "";
-
-  }
 
   > * {
 

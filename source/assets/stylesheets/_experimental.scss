@@ -2,6 +2,15 @@
 * Custom animation
 ===================================================== */
 
+.background-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: $site-hero-path-large;
+    background-position: 0 0;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
 .eclipse {
 	width: 100vw;
 	height: 100vh;
