@@ -17,6 +17,10 @@
 
 }
 
+/*
+ * Header Widgets
+ *
+ */
 
 /*
  * Secondary Widgets
@@ -70,6 +74,10 @@
 
     background-color: $color-grey-10!important;
 
+  }
+
+  #header-widgets & {
+    background: none;
   }
 
 }
