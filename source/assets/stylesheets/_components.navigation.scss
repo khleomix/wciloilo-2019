@@ -89,13 +89,6 @@
     }
 
   }
-
-  @include breakpoint(small) {
-
-    display: none;
-
-  }
-
 }
 
 /*
@@ -127,19 +120,13 @@
 
   }
 
-  @include breakpoint(to-small) {
-
     background-color: $color-brand-tertiary;
-
-
 
     &.toggled-on .menu {
 
       display: block;
 
     }
-
-  }
 
 }
 
@@ -150,21 +137,11 @@
 
   text-align: center;
 
-  @include breakpoint(small) {
+  display: none;
+
+  .toggled-on & {
 
     display: block;
-
-  }
-
-  @include breakpoint(to-small) {
-
-    display: none;
-
-    .toggled-on & {
-
-      display: block;
-
-    }
 
   }
 
