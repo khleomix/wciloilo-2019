@@ -90,11 +90,10 @@
   &:focus,
   &:active {
 
-    background-color: $color-link-hover;
-
     &:after {
 
-      background-color: $color-link-hover;
+      background-color: rgba($color-link-hover, 0.25);
+      border-radius: 25%;
     }
 
   }
