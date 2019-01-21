@@ -203,7 +203,7 @@
 
 }
 
-.menu-item > a {
+.menu-item a {
 
   display: block;
   color: $color-link;
@@ -238,7 +238,7 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
+    color: $color-text-strong-invert;
 
 
   }
@@ -257,9 +257,9 @@
 
 }
 
-.current-menu-item > a {
+.current-menu-item a {
 
-  color: $color-text-strong;
+  color: $color-text-strong-invert;
 
   &:before, 
   &:after {
