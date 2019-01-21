@@ -18,8 +18,6 @@
 
 #colophon {
 
-  background: url('https://2019.iloilo.wordcamp.org/files/2019/01/footer-bg.png') no-repeat 0 0;
-  background-size: cover;
 
   max-width: 100vw;
   margin-left: auto;
@@ -28,20 +26,6 @@
   position: relative;
 
   text-align: center;
-
-  &:before {
-
-    position: absolute;
-    right: 5%;
-    top: 0;
-    background:url('https://2019.iloilo.wordcamp.org/files/2019/01/siopuu.png')no-repeat;
-    background-size: contain;
-
-    height: 661px;
-    width: 700px;
-
-    content: "";
-  }
 
 }
 
@@ -55,7 +39,7 @@
   background: url(https://2019.iloilo.wordcamp.org/files/2019/01/daynight.jpg) 0 -5px repeat-x;
   height: 240px;
   width: 240px;
-  margin: 50px auto 0;
+  margin: -250px auto 0;
   position: relative;
   overflow: hidden;
   border-radius: 123px;
