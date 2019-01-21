@@ -178,6 +178,7 @@
 
   margin: 0;
   display: block;
+  padding: $unit-xs 0;
 
   font-family: $font-headline;
   font-size: ms(0);
@@ -207,7 +208,7 @@
 
   display: block;
   color: $color-link;
-  padding: $unit-xs $unit-s;
+  padding: 0 $unit-s;
 
   text-decoration: none;
   transition: all .1s ease;
@@ -296,6 +297,7 @@
   &:hover > a:before, 
   &:hover > a:after {
     opacity: 0;
+    width: 0;
   }
 
   .dropdown-toggle {
