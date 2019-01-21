@@ -211,7 +211,7 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
+    color: $color-text-strong-invert;
     background-color: $color-link-hover;
 
   }
@@ -232,7 +232,7 @@
 
 .current-menu-item > a {
 
-  color: $color-text-strong;
+  color: $color-text-strong-invert;
   background-color: $color-link;
 
 }
@@ -287,12 +287,12 @@
     &:hover > a,
     &.focus > a {
 
-      color: $color-text-strong;
+      color: $color-text-strong-invert;
       background-color: $color-link;
 
       &:after {
 
-        border-top-color: $color-text-strong;
+        border-top-color: $color-text-strong-invert;
 
       }
 
@@ -307,7 +307,7 @@
 
     &.current-menu-item > a:after {
 
-      border-top-color: $color-text-strong;
+      border-top-color: $color-text-strong-invert;
 
     }
 
