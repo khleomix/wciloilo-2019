@@ -15,7 +15,7 @@
  * Mobile menu switcher
  */
 
-.menu-toggle {
+ .menu-toggle {
 
   padding: $unit-s $unit-s;
   margin: 0;
@@ -89,6 +89,13 @@
     }
 
   }
+
+  @include breakpoint(small) {
+
+    display: none;
+
+  }
+
 }
 
 /*
@@ -104,7 +111,6 @@
 .main-navigation {
 
   position: relative;
-  z-index: 1000;
 
   &:before {
 
@@ -120,13 +126,19 @@
 
   }
 
+  @include breakpoint(to-small) {
+
     background-color: $color-brand-tertiary;
+
+
 
     &.toggled-on .menu {
 
       display: block;
 
     }
+
+  }
 
 }
 
@@ -137,18 +149,29 @@
 
   text-align: center;
 
-  display: none;
-
-  .toggled-on & {
+  @include breakpoint(small) {
 
     display: block;
 
   }
 
+  @include breakpoint(to-small) {
+
+    border-top: 1px solid rgba(255,255,255,.2);
+
+    display: none;
+
+    .toggled-on & {
+
+      display: block;
+
+    }
+
+  }
+
 }
 
-.menu-item,
-.page_item {
+.menu-item {
 
   position: relative;
 
@@ -173,8 +196,7 @@
 
 }
 
-.menu-item a,
-.page_item a {
+.menu-item a {
 
   display: block;
   color: $color-link;
@@ -207,8 +229,7 @@
 
 }
 
-.current-menu-item > a,
-.current_page_item > a {
+.current-menu-item > a {
 
   color: $color-text-strong;
   background-color: $color-link;
@@ -219,8 +240,7 @@
  * Sub menu
  */
 
-.menu-item-has-children,
-.page-item-has-children {
+.menu-item-has-children {
 
   background-color: rgba($color-brand-tertiary, .6);
 
@@ -298,8 +318,7 @@
 
   @include list-reset();
 
-  .menu-item,
-  .page-item {
+  .menu-item {
 
     text-transform: none;
     font-weight: $regular;
@@ -341,8 +360,7 @@
 
     background-color: $color-link;
 
-    .menu-item,
-    .page-item {
+    .menu-item {
 
       width: 100%;
       margin: 0;
