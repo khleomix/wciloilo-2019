@@ -112,6 +112,7 @@
 
   position: relative;
   z-index: 1000;
+  padding: $unit-xs 0;
 
   &:before {
 
@@ -185,7 +186,7 @@
     width: 50%;
     opacity: 1;
   }
-  
+
   @include breakpoint(small) {
 
     margin: 0 rem(1);
@@ -212,7 +213,7 @@
   &:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     width: 0px;
     height: 5px;
     margin: 5px 0 0;
