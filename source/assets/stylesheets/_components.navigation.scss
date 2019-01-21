@@ -121,7 +121,7 @@
     right: 0;
 
     height: rem(2);
-    background-color: $color-link;
+
 
     content: "";
 
@@ -129,7 +129,7 @@
 
   @include breakpoint(to-small) {
 
-    background-color: $color-brand-tertiary;
+
 
 
 
@@ -195,9 +195,15 @@
 
   }
 
+  &:hover > a:before, 
+  &:hover > a:after {
+    width: 50%;
+    opacity: 1;
+  }
+
 }
 
-.menu-item a {
+.menu-item > a {
 
   display: block;
   color: $color-link;
@@ -206,13 +212,34 @@
   text-decoration: none;
   transition: all .1s ease;
 
+  &:before, 
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+  }
+  &:before {
+    left: calc(50%);
+    background-color: $color-brand-secondary;
+  }
+  &:after {
+    right: calc(50%);
+    background-color: $color-brand-secondary;
+  }
+
   &:hover,
   &:active,
   &:focus,
   &.focus {
 
-    color: $color-text-strong-invert;
-    background-color: $color-link-hover;
+    color: $color-text-strong;
+
 
   }
 
@@ -232,8 +259,28 @@
 
 .current-menu-item > a {
 
-  color: $color-text-strong-invert;
-  background-color: $color-link;
+  color: $color-text-strong;
+
+  &:before, 
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 1;
+  }
+  &:before {
+    left: calc(50%);
+    background-color: $color-brand-secondary;
+  }
+  &:after {
+    right: calc(50%);
+    background-color: $color-brand-secondary;
+  }
 
 }
 
@@ -244,6 +291,12 @@
 .menu-item-has-children {
 
   background-color: rgba($color-brand-tertiary, .6);
+
+ 
+  &:hover > a:before, 
+  &:hover > a:after {
+    opacity: 0;
+  }
 
   .dropdown-toggle {
 
@@ -404,3 +457,8 @@
   }
 
 }
+
+
+
+
+
