@@ -51,46 +51,38 @@
 
 }
 
+.site-info {
+  background: url(https://2019.iloilo.wordcamp.org/files/2019/01/daynight.jpg) 0 -5px repeat-x;
+  height: 240px;
+  width: 240px;
+  margin: 50px auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 123px;
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(black, 0.5);
+  animation: daynight 4s linear infinite;  
+}
+
 .site-info-network {
 
   // @include hide-text();
 
-  position: relative;
-
   display: block;
-  width: rem(60);
-  height: rem(60);
-  margin: 0 auto;
-  margin-bottom: $unit-m;
 
-  color: #fff;
   text-indent: -9999px;
-
-  background-image: url('https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: $color-link;
-  background-size: 40px;
-  border-radius: 50%;
-
-  transition: all .1s ease;
 
   &:after {
 
-    position: absolute;
-    left: 50%;
-    top: rem(30);
-    z-index: -1;
-
-    margin-left: -(rem(15));
-    margin-bottom: -(rem(30));
-    width: rem(30);
-    height: rem(100);
-
-    background: $color-link;
-    transition: all .1s ease;
-
     content: "";
+    animation: wapuu 3s steps(6) infinite;
+    background: url(https://2019.iloilo.wordcamp.org/files/2019/01/eating-wapuu.png) 0 0 no-repeat; 
+    height: 160px;
+    width: 112px;
+    position: absolute;
+    bottom: 40px;
+    left: 66px;
+    margin: 0 auto;
 
   }
 
@@ -107,4 +99,13 @@
 
   }
 
+}
+
+@keyframes wapuu {  
+  0%   { background-position: 0 0; } 
+  100% { background-position: -672px 0; }
+}
+@keyframes daynight {  
+  0%   { background-position: 0 -5px; } 
+  100% { background-position: -1053px -5px; }
 }
