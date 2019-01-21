@@ -353,7 +353,7 @@
   @include breakpoint(small) {
 
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: -999em;
     z-index: $z-index-navigation-submenu;
 
