@@ -129,10 +129,6 @@
 
   @include breakpoint(to-small) {
 
-
-
-
-
     &.toggled-on .menu {
 
       display: block;
@@ -178,7 +174,6 @@
 
   margin: 0;
   display: block;
-  padding: $unit-xs 0;
 
   font-family: $font-headline;
   font-size: ms(0);
@@ -189,17 +184,17 @@
 
     margin: 0 rem(1);
     display: inline-block;
+    padding: $unit-xs 0;
 
     @include font-size(18);
     line-height: em(24,18);
     text-align: center;
 
-  }
-
-  &:hover > a:before, 
-  &:hover > a:after {
-    width: 50%;
-    opacity: 1;
+    &:hover > a:before, 
+    &:hover > a:after {
+      width: 50%;
+      opacity: 1;
+    }
   }
 
 }
@@ -208,31 +203,10 @@
 
   display: block;
   color: $color-link;
-  padding: 0 $unit-s;
+  padding: $unit-xs $unit-s;
 
   text-decoration: none;
   transition: all .1s ease;
-
-  &:before, 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    width: 0px;
-    height: 5px;
-    margin: 5px 0 0;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
-    opacity: 0;
-  }
-  &:before {
-    left: calc(50%);
-    background-color: $color-brand-secondary;
-  }
-  &:after {
-    right: calc(50%);
-    background-color: $color-brand-secondary;
-  }
 
   &:hover,
   &:active,
@@ -246,14 +220,54 @@
 
   @include breakpoint(medium) {
 
-    padding: $unit-s $unit-m;
-
+    padding: 0 $unit-m;
+    
+    &:before, 
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: all 0.2s ease-in-out;
+      transition-duration: 0.75s;
+      opacity: 0;
+    }
+    &:before {
+      left: calc(50%);
+      background-color: $color-brand-secondary;
+    }
+    &:after {
+      right: calc(50%);
+      background-color: $color-brand-secondary;
+    }
   }
 
   @include breakpoint(large) {
 
     padding: $unit-m $unit-l;
 
+    &:before, 
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: all 0.2s ease-in-out;
+      transition-duration: 0.75s;
+      opacity: 0;
+    }
+    &:before {
+      left: calc(50%);
+      background-color: $color-brand-secondary;
+    }
+    &:after {
+      right: calc(50%);
+      background-color: $color-brand-secondary;
+    }
   }
 
 }
