@@ -70,18 +70,6 @@
 
   }
 
-  &:hover,
-  &:focus,
-  &:active {
-
-    &:after {
-
-      background-color: rgba($color-link-hover, 0.25);
-      border-radius: 25%;
-    }
-
-  }
-
 }
 
 @keyframes wapuu {  
