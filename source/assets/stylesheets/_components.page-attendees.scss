@@ -23,20 +23,31 @@
     padding-bottom: rem(64);
 
     text-align: center;
+    background: white;
+    text-transform: uppercase;
 
     &:before {
 
-      width: rem(160);
-      height: rem(2);
-
+      content: " ";
       position: absolute;
+      top: 0;
+      right: 0;
       bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-
-      background-color: $color-brand-secondary;
-
-      content: "";
+      left: 0;
+      display: block;
+      background-image: -webkit-linear-gradient(320deg,$color-brand-primary 28%,$color-brand-secondary 100%);
+      background-image: -moz-linear-gradient(320deg,$color-brand-primary 28%,$color-brand-secondary 100%);
+      background-image: -ms-linear-gradient(320deg,$color-brand-primary 28%,$color-brand-secondary 100%);
+      background-image: -o-linear-gradient(320deg,$color-brand-primary 28%,$color-brand-secondary 100%);
+      background-image: linear-gradient(130deg,$color-brand-primary 28%,$color-brand-secondary 100%);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      -webkit-mix-blend-mode: color;
+      -moz-mix-blend-mode: color;
+      -ms-mix-blend-mode: color;
+      -o-mix-blend-mode: color;
+      mix-blend-mode: color;
 
     }
 
