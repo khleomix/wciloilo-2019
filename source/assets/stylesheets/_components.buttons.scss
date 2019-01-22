@@ -34,32 +34,36 @@
   /* Box-model */
   display: inline-block;
   padding: rem(7) rem(16);
-  border: 1px solid $color-button-regular;
+  border: 0;
 
   /* Typography */
   font-size: ms(0);
   line-height: ms(2);
   text-align: center;
-  color: $color-text;
-  font-family: $font-brand-primary;
+  color: $color-text-strong-invert;
+  font-family: $font-brand-tertiary;
   font-weight: $bold;
   text-decoration: none;
+  text-transform: uppercase;
 
   /* Visual */
-  background-color: $color-button-regular;
-  border-radius: $border-radius-small;
-  border-color: transparent;
+  background-image: -webkit-gradient(linear,right bottom,left top,from(#ff8a00),to(#da1b60));
+  background-image: linear-gradient(to top left,#ff8a00,#da1b60);
+  border-radius: 2rem;
+  white-space: nowrap;
+  padding: 1rem 1.5rem;
 
   /* Misc */
   cursor: pointer;
-  transition: all .1s ease;
+  -webkit-transition: 70ms;
+  transition: 70ms;
 
   &:hover,
   &:focus,
   &:active {
 
-    color: $color-text-strong;
-    background-color: $color-button-regular-hover;
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
     text-decoration: none;
 
   }
