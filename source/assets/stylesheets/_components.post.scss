@@ -19,7 +19,15 @@
 
 }
 
-.entry-header {}
+.entry-header {
+	background: url(https://2019.iloilo.wordcamp.org/files/2019/01/Two-Towers-of-Molo.jpg) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
 
 .entry-content {
 
@@ -31,23 +39,19 @@
 
   font-size: ms(5);
   line-height: ms(1);
+  color: #fff;
 
   margin-bottom: $unit-default;
-  position: relative;
   text-transform: uppercase;
-  text-align: center;
 
-	background: url(https://2019.iloilo.wordcamp.org/files/2019/01/Two-Towers-of-Molo.jpg) no-repeat center bottom;
-	background-size: cover;
-	color: #fff;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+	-webkit-transition: text-shadow 1s ease;
+	text-shadow: 0 0 1px rgba(0,0,0,.1);
+	margin: 0;
+	padding: 0;
+
   
   a {
-    -webkit-transition: text-shadow 1s ease;
-    text-shadow: 0 0 1px rgba(0,0,0,.1);
-    margin: 0;
-    padding: 0;
+    color: transparent;
 
     &:hover,
     &:focus,
