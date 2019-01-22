@@ -50,9 +50,8 @@
   /* Visual */
   background-image: -webkit-gradient(linear,right bottom,left top,from(#ff8a00),to(#da1b60));
   background-image: linear-gradient(to top left,#ff8a00,#da1b60);
-  border-radius: 2rem;
+  border-radius: $border-radius-large;
   white-space: nowrap;
-  padding: 1rem 1.5rem;
 
   /* Misc */
   cursor: pointer;
@@ -63,9 +62,10 @@
   &:focus,
   &:active {
 
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
+    background-image: -webkit-gradient(linear,right bottom,left top,from rgba(218,27,96,0.5),to rgba(255,138,0,0.5));
+    background-image: linear-gradient(to top left,rgba(218,27,96,0.5),rgba(255,138,0,0.5));
     text-decoration: none;
+    outline: none;
 
   }
 
