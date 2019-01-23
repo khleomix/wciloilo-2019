@@ -199,20 +199,3 @@
   }
 
 }
-
-/// border-gradient mixin: ///
-
-@mixin border-gradient($from, $to, $weight: 0) {
-  $mix-main: mix($from, $to);
-  $mix-sub-from: mix($mix-main, $from);
-  $mix-sub-to: mix($mix-main, $to);
-  
-  box-shadow: 5px 10px 5px $weight rgba($mix-sub-to, .25),
-              5px -10px 5px $weight rgba($mix-sub-from, .25),
-              10px 5px 5px $weight rgba($mix-sub-to, .25),
-              -10px 5px 5px $weight  rgba($mix-sub-from, .25),
-              10px -10px 5px $weight rgba($mix-main, .5),
-              -10px 10px 5px $weight rgba($mix-main, .5),
-              10px 10px 5px $weight rgba($to, .75),
-              -10px -10px 5px $weight rgba($from, .75);
-}
