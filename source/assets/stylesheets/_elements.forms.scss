@@ -67,14 +67,14 @@ fieldset {
 
 #{$all-text-inputs-hover} {
 
-  color: $color-brand-tertiary;
+  color: $color-text-strong;
 
 }
 
 #{$all-text-inputs-focus} {
 
   outline: none;
-  color: $color-brand-tertiary;
+  color: $color-text-strong;
   border-color: $color-input-focus;
   box-shadow: 0 0 0 .125em $color-input-focus;
 
@@ -147,7 +147,7 @@ select {
   font-family: $font-brand-primary;
   font-size: ms(0);
   line-height: ms(2);
-  color: $color-brand-tertiary;
+  color: $color-text-paragraph;
   font-weight: $bold;
 
   /* Visual */
