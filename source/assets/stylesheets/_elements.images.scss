@@ -70,39 +70,3 @@ figcaption {
     transform: rotate(1080deg) scale(1) translate(0, 0);
   }
 }
-
-
-
-///// OTHER /////
-
-.wp-block-image > * {
-  display: inline-block; vertical-align: top;
-  
-  position: relative;
-  margin: 0 2%;
-}
-
-.wp-block-image { 
-  transform: translateZ(0); 
-  margin-bottom: 100px;
-}
-
-body {
-  background-color: #222; color: #fff;
-  text-align: center;
-}
-
-.container {
-  overflow: hidden;
-  padding-bottom: 150px;
-}
-
-
-h1 {
-  font: 100 50px/1.25em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 50px;
-  
-  span {
-    font-weight: 300;
-  }
-}
