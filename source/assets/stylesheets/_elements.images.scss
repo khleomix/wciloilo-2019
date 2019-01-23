@@ -31,10 +31,10 @@ figcaption {
 
 .wp-block-image { 
   transform: translateZ(0); 
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 
 
-  .img {
+  img {
     
     @include border-gradient(skyblue, hotpink);
 
