@@ -41,31 +41,3 @@ figcaption {
   }
 
 }
-
-@keyframes rotateThis {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-  
-  to {
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-@keyframes psycho {
-  0% {
-    transform: rotate(0deg) scale(1) translate(0, 0);
-  }
-  
-  33% {
-    transform: rotate(360deg) scale(1) translate(5px, 5px);
-  }
-  
-  66% {
-    transform: rotate(720deg) scale(1) translate(-5px, -5px);
-  }
-  
-  100% {
-    transform: rotate(1080deg) scale(1) translate(0, 0);
-  }
-}
