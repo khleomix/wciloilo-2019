@@ -66,6 +66,7 @@
 }
 
 .entry-meta {
+  @include hide-text;
   @include font-size(16);
 
   margin-bottom: $unit-s;
