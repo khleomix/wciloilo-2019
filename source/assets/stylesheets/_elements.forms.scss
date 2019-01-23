@@ -54,8 +54,8 @@ fieldset {
   color: $color-text-paragraph;
 
   /* Visual */
-  background-image: -webkit-gradient(linear,right bottom,left top,from rgba(255,138,0,0.5),to rgba(218,27,96,0.5));
-  background-image: linear-gradient(to top left,rgba(255,138,0,0.5),rgba(218,27,96,0.5));
+  background-image: -webkit-gradient(linear,right bottom,left top,from rgba(255,138,0,0.25),to rgba(218,27,96,0.25));
+  background-image: linear-gradient(to top left,rgba(255,138,0,0.25),rgba(218,27,96,0.25));
   border-radius: $border-radius-large;
 
   /* Misc */
@@ -67,14 +67,14 @@ fieldset {
 
 #{$all-text-inputs-hover} {
 
-  color: $color-text-strong;
+  color: $color-brand-tertiary;
 
 }
 
 #{$all-text-inputs-focus} {
 
   outline: none;
-  color: $color-text-strong;
+  color: $color-brand-tertiary;
   border-color: $color-input-focus;
   box-shadow: 0 0 0 .125em $color-input-focus;
 
@@ -147,7 +147,7 @@ select {
   font-family: $font-brand-primary;
   font-size: ms(0);
   line-height: ms(2);
-  color: $color-text-paragraph;
+  color: $color-brand-tertiary;
   font-weight: $bold;
 
   /* Visual */
