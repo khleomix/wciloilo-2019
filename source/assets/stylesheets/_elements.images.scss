@@ -28,3 +28,90 @@ figcaption {
   color: $color-text-weak;
 
 }
+
+
+
+.wp-block-image > * {
+  display: inline-block; vertical-align: top;
+  
+  position: relative;
+  margin: 0 2%;
+}
+
+.wp-block-image { 
+  transform: translateZ(0); 
+  margin-bottom: 100px;
+
+
+  .img {
+    
+    @include border-gradient(skyblue, hotpink);
+
+    animation: rotateThis 1s linear infinite;
+  }
+
+}
+
+@keyframes rotateThis {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes psycho {
+  0% {
+    transform: rotate(0deg) scale(1) translate(0, 0);
+  }
+  
+  33% {
+    transform: rotate(360deg) scale(1) translate(5px, 5px);
+  }
+  
+  66% {
+    transform: rotate(720deg) scale(1) translate(-5px, -5px);
+  }
+  
+  100% {
+    transform: rotate(1080deg) scale(1) translate(0, 0);
+  }
+}
+
+
+
+///// OTHER /////
+
+.wp-block-image > * {
+  display: inline-block; vertical-align: top;
+  
+  position: relative;
+  margin: 0 2%;
+}
+
+.wp-block-image { 
+  transform: translateZ(0); 
+  margin-bottom: 100px;
+}
+
+body {
+  background-color: #222; color: #fff;
+  text-align: center;
+}
+
+.container {
+  overflow: hidden;
+  padding-bottom: 150px;
+}
+
+
+h1 {
+  font: 100 50px/1.25em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 50px;
+  
+  span {
+    font-weight: 300;
+  }
+}
