@@ -34,8 +34,7 @@ figcaption {
   margin-bottom: 20px;
 
 
-  &:before {
-    content: " ";
+  img {
     
     @include border-gradient(skyblue, hotpink);
 
