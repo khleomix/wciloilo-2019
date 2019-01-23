@@ -23,8 +23,6 @@ figure  {
 
 figcaption {
 
-  margin-top: -10%;
-  margin-bottom: 10%;
   color: $color-text-strong;
   font-family: $font-brand-tertiary;
   font-size: ms(0, 24px);
@@ -46,4 +44,22 @@ figcaption {
 
   }
 
+  figcaption {
+
+    margin-top: -10%;
+    margin-bottom: 10%;
+    font-family: $font-brand-tertiary;
+    font-size: ms(0, 24px);
+    position: relative;
+    z-index: 1000;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+  
 }
