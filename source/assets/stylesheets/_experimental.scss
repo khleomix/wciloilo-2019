@@ -67,7 +67,7 @@
 	left: 50%;
 	margin-left: -355px;
 	
-	@include breakpoint(small) {
+	@include breakpoint(medium) {
 
 		background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope.png')no-repeat;
 		margin-left: -372px;
