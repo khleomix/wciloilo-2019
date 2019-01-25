@@ -30,7 +30,7 @@
   font-weight: $bold;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link;
+  color: $color-text-strong-invert;
 
   border-radius: 0;
   background-color: rgba($color-brand-tertiary, .9);
@@ -42,7 +42,7 @@
   &:focus,
   &.focus {
 
-    color: $color-link-hover;
+    color: $color-text-strong-invert;
     background-color: rgba($color-brand-tertiary, .9);
 
   }
