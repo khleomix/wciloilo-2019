@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     background-image: $site-hero-path-large;
-    background-position: 0 0;
+    background-position: center top;
     background-size: cover;
     position: relative;
     z-index: 2;
@@ -65,7 +65,13 @@
     z-index: 3;
     top: -844px;
     left: 50%;
-    margin-left: -372px;
+	margin-left: -372px;
+	
+	@include breakpoint(small) {
+
+		background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope-mobile.png')no-repeat;
+
+  	}
 }
 .star {
 	width: 4px;
