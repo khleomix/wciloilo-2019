@@ -79,12 +79,12 @@
 
   &[aria-expanded="true"] {
 
-    color: $color-text-strong-invert;
+    color: $color-link;
 
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-text-strong-invert;
+      border-bottom-color: $color-link;
 
     }
 
