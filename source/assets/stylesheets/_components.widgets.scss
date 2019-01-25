@@ -101,6 +101,8 @@
       display: flex;
       clear: both;
       text-align: center;
+      flex-wrap: wrap;
+      justify-content: center;
 
       .sponsor-level-title {
         display: none;
@@ -115,7 +117,9 @@
         transform-origin: center -20px;
         float: left;
         box-shadow: 0 5px 20px rgba(0,0,0,.5);
-        height: 300px;
+        height: auto;
+        max-height: 300px;
+        max-width: 300px;
         margin: 20px;
         padding: 10px;
         border: 5px solid rgba(255,255,255, 0.5);
@@ -123,8 +127,9 @@
         img {
           max-width: 100%;
           height: auto;
-          max-height: 150px;
           width: auto;
+          margin-top: 25%;
+          margin-bottom: 25%;
         }
         &:after{
           content: '';
