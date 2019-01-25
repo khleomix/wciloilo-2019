@@ -58,7 +58,7 @@
 .words {
     width: 743px;
     height: 844px;
-    background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope.png')no-repeat;
+    background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope-mobile.png')no-repeat;
     background-size: contain;
     position: absolute;
     animation: words 30s linear infinite;
@@ -69,7 +69,7 @@
 	
 	@include breakpoint(small) {
 
-		background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope-mobile.png')no-repeat;
+		background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope.png')no-repeat;
 
   	}
 }
