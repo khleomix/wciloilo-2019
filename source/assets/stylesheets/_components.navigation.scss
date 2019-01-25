@@ -71,7 +71,7 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-link;
+    border-top-color: $color-text-strong-invert;
 
     content: "";
 
@@ -79,12 +79,12 @@
 
   &[aria-expanded="true"] {
 
-    color: $color-link;
+    color: $color-text-strong-invert;
 
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-link;
+      border-bottom-color: $color-text-strong-invert;
 
     }
 
