@@ -71,15 +71,15 @@
 
 img {
   .wcorg-sponsor-level-gold & {
-    max-width: rem(600);
-  }
-
-  .wcorg-sponsor-level-silver & {
     max-width: rem(400);
   }
 
-  .wcorg-sponsor-level-bronze & {
+  .wcorg-sponsor-level-silver & {
     max-width: rem(300);
+  }
+
+  .wcorg-sponsor-level-bronze & {
+    max-width: rem(250);
   }
 
   .wcorg-sponsor-level-in-kind &,
