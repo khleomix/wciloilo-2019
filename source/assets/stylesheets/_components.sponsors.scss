@@ -69,6 +69,25 @@
 
 }
 
+img {
+  .wcorg-sponsor-level-gold & {
+    max-width: rem(600);
+  }
+
+  .wcorg-sponsor-level-silver & {
+    max-width: rem(400);
+  }
+
+  .wcorg-sponsor-level-bronze & {
+    max-width: rem(300);
+  }
+
+  .wcorg-sponsor-level-in-kind &,
+  .wcorg-sponsor-level-media-partners & {
+    max-width: rem(200);
+  }
+}
+
 .wcorg-sponsor {
 
   margin-bottom: 0;
@@ -80,23 +99,6 @@
     margin: 0 auto;
     max-height: rem(140);
 
-  }
-
-  .wcorg-sponsor-level-gold img {
-    max-width: rem(600);
-  }
-
-  .wcorg-sponsor-level-silver img {
-    max-width: rem(400);
-  }
-
-  .wcorg-sponsor-level-bronze img {
-    max-width: rem(300);
-  }
-
-  .wcorg-sponsor-level-in-kind img,
-  .wcorg-sponsor-level-media-partners img {
-    max-width: rem(200);
   }
 
   h3,
