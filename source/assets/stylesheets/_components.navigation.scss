@@ -374,9 +374,11 @@
 
   .menu-item {
 
-    text-transform: none;
-    font-weight: $regular;
-    font-family: $font-body;
+    font-family: $font-headline;
+    font-size: ms(0);
+    font-weight: $light;
+    text-align: left;
+    letter-spacing: 1px;
 
   }
 
@@ -412,7 +414,7 @@
 
     min-width: rem(260);
 
-    background-color: $color-link;
+    background-color: rgba($color-link, .5);
 
     .menu-item {
 
