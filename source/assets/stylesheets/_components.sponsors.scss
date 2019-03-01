@@ -70,6 +70,9 @@
 }
 
 img {
+  .wcorg-sponsor-level-platinum & {
+    max-width: rem(500);
+  }
   .wcorg-sponsor-level-gold & {
     max-width: rem(400);
   }
