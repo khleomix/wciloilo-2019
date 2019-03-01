@@ -1,2 +1,13 @@
 /* =Forms
 ===================================================== */
+
+.contact-form {
+    input[type=email], 
+    input [type=text],
+    input[type=url],
+    select,
+    textarea {
+        width: 300px;
+        max-width: 98%;
+    }
+}
