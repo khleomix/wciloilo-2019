@@ -35,10 +35,6 @@
 
 }
 
-.home .entry-title {
-  margin-bottom: 0;
-}
-
 .entry-title {
 
   font-size: ms(5);
@@ -49,7 +45,7 @@
   text-shadow: 0 0 1px rgba(0,0,0,.1);
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: $unit-xl;
+  margin-bottom: $unit-s;
 	padding: 0;
   
   a {
@@ -68,7 +64,6 @@
 }
 
 .entry-meta {
-  @include hide-text;
   @include font-size(16);
 
   margin-bottom: $unit-s;
