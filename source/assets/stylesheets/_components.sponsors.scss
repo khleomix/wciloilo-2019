@@ -82,6 +82,23 @@
 
   }
 
+  .wcorg-sponsor-level-gold img {
+    max-width: rem(600);
+  }
+
+  .wcorg-sponsor-level-silver img {
+    max-width: rem(400);
+  }
+
+  .wcorg-sponsor-level-bronze img {
+    max-width: rem(300);
+  }
+
+  .wcorg-sponsor-level-in-kind img,
+  .wcorg-sponsor-level-media-partners img {
+    max-width: rem(200);
+  }
+
   h3,
   .wcorg-sponsor-description p {
 
