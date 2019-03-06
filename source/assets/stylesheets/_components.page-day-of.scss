@@ -107,10 +107,18 @@
 
 #content-widget-1 {
 
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+
   &:before {
 
-    background-image: $image-pattern-01;
-    background-color: $color-brand-quaternary!important;
+    background-color: #FFE9C9!important;
     background-size: 120px;
     background-attachment: fixed;
     background-position: 50% 0;
