@@ -34,18 +34,15 @@ figcaption {
 .wp-block-image {
   margin-bottom: 20px;
 
+	&.no-bg img {
+        background: none;
+    }
 
   img {
-
     position: relative;
     background: linear-gradient(to right, red, orange);
     padding: 10px;
     margin-bottom: 0;
-
-    .no-bg {
-        background: none;
-    }
-
   }
 
   figcaption {
