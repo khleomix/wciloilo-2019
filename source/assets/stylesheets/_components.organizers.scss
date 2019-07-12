@@ -22,8 +22,13 @@
 
 		.wcorg-organizer {
 			flex: 1;
+			min-width: 50%;
 		}
 	}
+}
+
+.gcard .grav-tag {
+	right: 0;
 }
 
 .wcorg-organizer {
