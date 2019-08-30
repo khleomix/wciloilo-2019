@@ -30,8 +30,10 @@
 }
 
 .entry-content {
-
   @include clearfix();
+
+  margin-bottom: $unit-l;
+  margin-top: $unit-l;
 
 }
 
@@ -44,10 +46,9 @@
 	-webkit-transition: text-shadow 1s ease;
   text-shadow: 0 0 1px rgba(0,0,0,.1);
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: $unit-s;
+  margin: $unit-m 0;
 	padding: 0;
-  
+
   a {
     color: transparent;
 
