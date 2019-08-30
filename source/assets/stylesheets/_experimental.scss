@@ -4,12 +4,13 @@
 
 .background-bg {
     width: 100vw;
-    height: 100vh;
+    height: 40vh;
     background-image: $site-hero-path-large;
-    background-position: center top;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 .eclipse {
 	width: 100vw;
@@ -66,7 +67,7 @@
     top: -844px;
 	left: 50%;
 	margin-left: -355px;
-	
+
 	@include breakpoint(medium) {
 
 		background: url('https://2019.iloilo.wordcamp.org/files/2019/01/wciloilo2019-rope.png')no-repeat;
@@ -85,6 +86,7 @@
 	animation-name: fader;
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
+	z-index: 1;
 }
 .star::before {
 	content: '';
@@ -110,7 +112,7 @@
 	top:50px;
 	animation-name: blinker;
 	animation-duration: 20s;
-	animation-iteration-count: infinite;	
+	animation-iteration-count: infinite;
 }
 .star.a {
 	top:30px;
@@ -165,7 +167,7 @@
 	40% { opacity: 0; }
 	60% { opacity: 1; }
 	70% {  opacity: 0; }
-	100% { opacity: 0; }	
+	100% { opacity: 0; }
 }
 @keyframes blinker-1 {
     0% { opacity: 0; }
@@ -173,11 +175,11 @@
     40% { opacity: 1; }
     60% { opacity: 1; }
     80% {  opacity: 0; }
-    100% { opacity: 0; }	
+    100% { opacity: 0; }
 }
 
 
 // Hide elements
 .custom-header {
-    height: 100vh;
+    height: 40vh;
 }
