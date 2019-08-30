@@ -12,7 +12,7 @@
     position: relative;
     z-index: 1;
 
-    @include breakpoint(media) {
+    @include breakpoint(small) {
 		background-image: $site-hero-path-large;
 	}
 }
