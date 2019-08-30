@@ -182,7 +182,7 @@
   text-align: left;
   letter-spacing: 1px;
 
-  &:hover > a:before, 
+  &:hover > a:before,
   &:hover > a:after {
     width: 50%;
     opacity: 1;
@@ -211,7 +211,7 @@
   text-transform: uppercase;
   transition: all .1s ease;
 
-  &:before, 
+  &:before,
   &:after {
     content: "";
     position: absolute;
@@ -248,7 +248,7 @@
 
   color: $color-text-strong-invert;
 
-  &:before, 
+  &:before,
   &:after {
     content: "";
     position: absolute;
@@ -270,7 +270,7 @@
 .menu-item-has-children {
 
   a {
-    &:before, 
+    &:before,
     &:after {
       content: "";
       position: absolute;
@@ -292,7 +292,7 @@
     }
   }
 
-  &:hover > a:before, 
+  &:hover > a:before,
   &:hover > a:after {
     opacity: 0;
     width: 0;
@@ -414,7 +414,7 @@
 
     min-width: rem(260);
 
-    background-color: rgba($color-link, .5);
+    background-color: rgba($color-link, .85);
 
     .menu-item {
 
