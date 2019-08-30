@@ -5,12 +5,16 @@
 .background-bg {
     width: 100vw;
     height: 40vh;
-    background-image: $site-hero-path-large;
+    background-image: $site-hero-path-small;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
+
+    @include breakpoint(media) {
+		background-image: $site-hero-path-large;
+	}
 }
 .eclipse {
 	width: 100vw;
